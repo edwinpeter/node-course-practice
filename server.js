@@ -73,6 +73,13 @@ app.get('/bad', (req,res)=>{
 	});
 });
 
+
+app.get('/profile', (req,res)=>{
+	res.render('profile.hbs', {
+		pageTitle: 'Profile Page'
+	});
+});
+
 app.listen(port, ()=>{
 	console.log(`Server is up on port ${port}`);
 });
